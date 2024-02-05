@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title"
+        content="Explorez le Monde Enchanté du Professeur Zéphyrus Plimplom | Inventions Loufoques et Aventures Magiques">
+    <meta name="description"
+        content="Plongez dans l'univers captivant du Professeur Zéphyrus Plimplom, où la science rencontre la fantaisie à travers des inventions loufoques. Découvrez des créations extraordinaires, des expériences hors du commun et embarquez pour un voyage magique comme nul autre. Bienvenue dans un royaume où chaque pixel renferme une pincée de magie !">
+    <title>Accueil - Zéphyrus Plimplom</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+
+<body>
+
+    <!-- Section principale -->
+    <section id="accueil">
+        <div class="container">
+            <h1>Bienvenue dans le Laboratoire Magique de Zéphyrus Plimplom | Inventions Loufoques et Aventures Magiques
+            </h1>
+            <p>
+                Immergez-vous dans le monde extraordinaire de la Professeur Zéphyrus Plimplom, inventrice ingénieuse au
+                flair pour l'insolite. Explorez des inventions enchantées, des chaussures multidirectionnelles à la
+                plume quantique, et rejoignez-nous pour une aventure fantastique où chaque création défie l'ordinaire.
+                Pénétrez dans le laboratoire de la professeur, un lieu où la magie prend vie !
+            </p>
+            <a href="" class="btn">Entrez dans la magie</a>
+        </div>
+    </section>
+
+    <!-- Inventions Magiques -->
+    <section id="inventions">
+        <div class="container">
+            <h2>Inventions Magiques du Professeur</h2>
+            <p class="intro">
+                Plongez dans l'univers enchanté de la Professeur Zéphyrus Plimplom et découvrez ses inventions magiques.
+                De la machine à remonter le temps alimentée par des paillettes aux chaussettes volantes, chaque création
+                est une ode à l'imagination débridée.
+            </p>
+            <div id="inventions_list">
+                <!-- Les 3 dernières inventions sont affichées ici -->
+            </div>
+            <a href="/pages/inventions.html" class="btn">Découvrez les inventions</a>
+        </div>
+    </section>
+
+    <!-- Laboratoire Loufoque -->
+    <section id="laboratoire">
+        <div class="container">
+            <h2>Le Laboratoire Loufoque</h2>
+            <div class="content">
+                <img src="/assets/images/invention.jpg" alt="une description">
+                <div class="content_body">
+                    <p>
+                        Bienvenue dans le laboratoire où les idées les plus étranges prennent vie. La Professeur Zéphyrus
+                        Plimplom, entourée de ses assistant·e·s farfelu·e·s,
+                        travaille sans relâche pour repousser les limites de la science et de la folie. Consultez notre
+                        calendrier d'événements pour assister à des expériences
+                        en direct et des démonstrations loufoques.
+                    </p>
+                    <a href="/pages/contact.html" class="btn">Contactez-nous !</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts JS-->
+    <script src="services/common.js"></script>
+    <script src="data/inventions_data.js"></script>
+    <script src="services/inventions.js"></script>
+    <script>
+        // Charger l'en-tête depuis header.html
+        displayHeader();
+        // Charger le pied de page depuis footer.html
+        displayFooter();
+        // Afficher les 3 dernières inventions sur la page d'accueil : 
+        displayInventionsHome();
+    </script>
+</body>
+
+</html>

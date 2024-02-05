@@ -1,0 +1,41 @@
+<!-- inventions.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: référencement pages show one invention -->
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <title>Inventions - Zéphyrus Plimplom</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/inventions.css">
+</head>
+
+<body>
+    <!-- Show Invention -->
+    <section id="inventions">
+        <h1 id="invention_title"><!-- TODO: Afficher le titre de l'invention --></h1>
+        <div id="invention_details">
+            <!-- TODO: Afficher les details de l'invention (image, inventeur, année d'invention, etc ...) -->
+        </div>
+        <a href="/pages/inventions.html">Retour</a>
+    </section>
+
+    <!-- Scripts JS-->
+    <script src="../services/common.js"></script>
+    <script src="../data/inventions_data.js"></script>
+    <script src="../services/inventions.js"></script>
+    <script>
+        // Charger l'en-tête depuis header.html
+        displayHeader();
+        // Charger le pied de page depuis footer.html
+        displayFooter();
+        // TODO: Implémenter la fonction displayInvention dans le fichier services/inventions.js
+        // pour afficher les détails de l'invention sur la page 
+        displayInvention();
+    </script>
+</body>
+
+</html>

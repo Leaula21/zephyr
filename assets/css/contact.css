@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+input, textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--chocolate-color);
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--chocolate-color);
+}

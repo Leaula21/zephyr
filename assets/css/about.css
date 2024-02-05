@@ -1,0 +1,16 @@
+#apropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#apropos p {
+    width: 80%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about {
+    width: 30%;
+}

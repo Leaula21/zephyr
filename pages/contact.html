@@ -1,0 +1,62 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title"
+        content="Contactez la Professeur Zéphyrus Plimplom | Inventrice Loufoque et Créatrice de Magie Scientifique">
+    <meta name="description"
+        content="Prenez contact avec la Professeur Zéphyrus Plimplom, la géniale inventrice derrière des créations loufoques. Envoyez-nous un message magique, posez vos questions sur ses inventions extraordinaires, ou réservez une visite du laboratoire loufoque. Plongez dans l'univers enchanteur du professeur et participez à l'aventure de la science fantastique.">
+    <title>Contact - Zéphyrus Plimplom</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+
+<body>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h1>Contactez la Professeur Zéphyrus Plimplom</h1>
+            <p>
+                Pour toute question, suggestion ou réservation, n'hésitez pas à contacter la Professeur Zéphyrus
+                Plimplom. Remplissez le formulaire ci-dessous pour nous envoyer un message magique, ou consultez nos
+                coordonnées pour planifier une visite du laboratoire loufoque. Nous sommes impatients de vous accueillir
+                dans notre univers unique où la science et la fantaisie se rencontrent de manière magique !
+            </p>
+            <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts JS-->
+    <script src="../services/common.js"></script>
+    <script src="../services/contact_form.js"></script>
+    <script>
+        // Charger l'en-tête depuis header.html
+        displayHeader();
+        // Charger le pied de page depuis footer.html
+        displayFooter();
+
+        // TODO: Gestion du formulaire de contact : 
+        // Implémenter la fonction handleFormSubmit pour gérer l'envoi du formulaire
+        // dans le fichier services/contact_form.js
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function (event) {
+            handleFormSubmit(event);
+        });
+    </script>
+</body>
+
+</html>
