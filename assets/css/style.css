@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Single+Day&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
 }
 
@@ -16,10 +15,19 @@
 }
 
 body {
+    /* Rajout de la max-width */
+    max-width: 100%;
     font-family: var(--main-font);
     background: var(--creamy-color);
     color: var(--brown-color);
     font-size: 1.5rem;
+}
+
+/* Rajout d'une media querrie pour la taille du texte qui debordé en version mobile */
+@media screen and (max-width: 643px) {
+    body {
+        font-size: 1rem;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,6 +103,8 @@ header {
     position: fixed;
     top: 0;
     z-index: 1000;
+    /* Rajout d'une max-width */
+    max-width: 100%;
 }
 
 nav {

@@ -22,6 +22,7 @@
 #inventions_list {
     display: flex;
     flex-direction: row;
+    /* rajout d'une max-width */
 }
 
 .invention img {
@@ -115,5 +116,12 @@
     .content p {
         margin-top: 15px;
         width: 100%;
+    }
+
+    .invention {
+        width: 300px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
