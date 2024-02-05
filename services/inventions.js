@@ -48,9 +48,17 @@ function displayInventionDetailsCard(htmlTarget, invention) {
     TODO: Implement this function.
 */
 function displayAllInventions() {
-    // Get target element from the DOM to display the inventions
+        // Get target element from the DOM to display the inventions
+        const htmlTarget = document.getElementById('inventions_list');
+        // Clear the list
+        htmlTarget.innerHTML = '';
+        // Create and Display Card for all inventions
+        for (let i = 0; i < inventions.length;  i++) {
+            displayInventionDetailsCard(htmlTarget, inventions[i]);
+       // Get target element from the DOM to display the inventions
     // Clear the list
     // Create and Display Card for 3 inventions
+}
 }
 
 /*
@@ -63,6 +71,7 @@ function displayInvention() {
     // Get the id of the invention from the URL
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
+    
     // Get the target element from the DOM
     const dataIdd = document.getElementById ("invention_title")
  const dataId = document.getElementById("invention_details")
