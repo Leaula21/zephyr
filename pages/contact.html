@@ -25,18 +25,20 @@
                 coordonnées pour planifier une visite du laboratoire loufoque. Nous sommes impatients de vous accueillir
                 dans notre univers unique où la science et la fantaisie se rencontrent de manière magique !
             </p>
-            <form>
+            <form id="formulaire">
                 <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
+                <input maxlength="10" type="text" id="name" name="name" required>
 
                 <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
+                <input maxlength="30" type="email" id="email" name="email" required>
 
                 <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea maxlength="280" id="message" name="message" required></textarea>
 
                 <button type="submit" class="btn">Envoyer</button>
             </form>
+            <br>
+            <div id="replaceForm"></div>
         </div>
     </section>
 
