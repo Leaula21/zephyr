@@ -9,10 +9,11 @@
     text-align: center;
     background-color: var(--creamy-color);
     padding: 20px;
+    border-radius: 10px; /*Ajout d'un border-radius*/
 }
 
 #inventions {
-    margin-top: 160px;
+    margin-top: 50px;
 }
 
 .intro {
@@ -21,12 +22,14 @@
 
 #inventions_list {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    
     /* rajout d'une max-width */
 }
 
 .invention img {
     width: 100%;
+    border-radius: 10px 10px 0;
 }
 
 .invention h3 {
@@ -79,7 +82,6 @@
     margin: 0 auto;
 }
 
-
 /* Media Queries */
 
 /* Tablet */
@@ -89,9 +91,6 @@
     }
     #inventions {
         margin-top: 90px;
-    }
-    #inventions_list {
-        flex-direction: column;
     }
     .invention p {
         font-size: 1rem;

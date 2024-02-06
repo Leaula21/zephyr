@@ -37,7 +37,7 @@ function displayInventionDetailsCard(htmlTarget, invention) {
             invention.description.substring(0, 100) + '...' :
             invention.description
         }</p>
-        <a href="/pages/show_invention.html?id=${invention.id}">En voir plus</a>
+        <div class="Cards__Savoir-Plus"><a href="/pages/show_invention.html?id=${invention.id}">En voir plus</a></div>
     </div>
   `;
     htmlTarget.innerHTML += card;
@@ -71,7 +71,6 @@ function displayInvention() {
     // Get the id of the invention from the URL
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
-    
     // Get the target element from the DOM
     const dataIdd = document.getElementById ("invention_title")
  const dataId = document.getElementById("invention_details")

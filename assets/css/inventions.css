@@ -12,13 +12,17 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: center;
 	align-content: space-evenly;
+    gap: 25px;
 }
 
+/* Rajout de object fit & max-height */
 .invention img {
     width: 100%;
     height: 350px;
+    object-fit: cover;
+    max-height: 50%;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .invention h3 {
@@ -40,12 +44,20 @@
 
 .invention {
     width: 350px;
+    min-height: 100%;
     margin: 0 20px;
-    border-radius: 10px;
+    border-radius: 10px; /*Ajout d'un border radius pour arrondir les cards*/
     background-color: #fde9c9;
     box-shadow: 0 0 10px 0 var(--chocolate-color);
-    padding-bottom: 20px;
 }
+
+/* Rajout media querie pour redimensionner les cartes en format desktop */
+@media screen and (min-width: 1520px) {
+    .invention {
+        width: 500px;
+        margin: 0;
+    }
+} 
 
 #invention_details img {
     width: 20%;

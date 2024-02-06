@@ -19,3 +19,7 @@ label {
     font-weight: bold;
     color: var(--chocolate-color);
 }
+/*Espacement pour le titre*/
+#contact{
+margin-top: 100px;
+}
